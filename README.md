@@ -8,7 +8,7 @@ Open a command console, enter your project directory and execute the
 following command to download the latest stable version of this bundle:
 
 ```console
-$ composer require gsiwerd/my-bundle
+$ composer require gsiwerd/my-bundle @dev
 ```
 
 This command requires you to have Composer installed globally, as explained
@@ -40,4 +40,15 @@ class AppKernel extends Kernel
 
     // ...
 }
+```
+
+Step 3: Add routing
+-------------------------
+
+Add bundle routing to `app/config/routing.yml` file of your project:
+
+```yaml
+my:
+  resource: "@MyBundle/Resources/config/routing.yml"
+  prefix:   /
 ```

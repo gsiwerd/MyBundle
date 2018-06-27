@@ -106,7 +106,7 @@ class ItemsController extends FOSRestController
         return false;")));
     }
 
-    $content = $this->get('templating')->render(
+    $content = $this->renderView(
         'MyBundle:Items:index.html.twig',
         array('form' => $form->createView(),
           'items' => $items,

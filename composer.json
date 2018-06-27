@@ -1,0 +1,15 @@
+{
+    "name" : "gsiwerd/my-bundle",
+    "description" : "A bundle for items management",
+    "type" : "symfony-bundle",
+    "authors" : [{
+        "name" : "Gabriela Siwerd-Wawrzyniak",
+        "email" : "g.siwerd@gmail.com"
+    }],
+    "autoload" : {
+        "psr-4" : {
+            "gsiwerd\\MyBundle" : ""
+        }
+    },
+    "target-dir" : "gsiwerd/MyBundle"
+}

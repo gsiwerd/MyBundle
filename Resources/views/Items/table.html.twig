@@ -1,0 +1,14 @@
+<table style="border: 2px solid black; border-collapse: collapse;">
+  <tr>
+    <th style="border: 1px solid black">Id</td>
+    <th style="border: 1px solid black">Nazwa</td>
+    <th style="border: 1px solid black">Liczba</td>
+  </tr>
+  {% for item in items %}
+    <tr onclick="window.location='{{ default_url }}/{{ criteria }}/{{ item.id }}';">
+      <td style="border: 1px solid black">{{ item.id }}</td>
+      <td style="border: 1px solid black">{{ item.name }}</td>
+      <td style="border: 1px solid black">{{ item.amount }}</td>
+    </tr>
+  {% endfor %}
+</table>

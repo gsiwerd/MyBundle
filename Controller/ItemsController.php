@@ -107,7 +107,7 @@ class ItemsController extends FOSRestController
     }
 
     $content = $this->renderView(
-        'MyBundle:Items:index.html.twig',
+        '@My/Items/index.html.twig',
         array('form' => $form->createView(),
           'items' => $items,
           'default_url' => $default_url,

@@ -1,0 +1,19 @@
+gsiwerd\MyBundle\Entity\Items:
+    type: entity
+    table: items
+    uniqueConstraints:
+        uniqueConstraint:
+            columns: [name]
+    repositoryClass: gsiwerd\MyBundle\Repository\ItemsRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: text
+        amount:
+            type: integer
+    lifecycleCallbacks: {  }

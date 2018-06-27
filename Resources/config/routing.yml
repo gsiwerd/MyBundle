@@ -1,0 +1,35 @@
+default_page:
+    path: /items
+    controller: gsiwerd\MyBundle\Controller\ItemsController::getAllAction
+    methods: [GET]
+
+items_page:
+    path: /items/{criteria}
+    controller: gsiwerd\MyBundle\Controller\ItemsController::getSelectedAction
+    methods: [GET]
+
+get_item:
+    path: /items/{criteria}/{id}
+    controller: gsiwerd\MyBundle\Controller\ItemsController::getOneAction
+    requirements:
+        id: '\d+'
+    methods: [GET]
+
+add_item:
+    path: /items/{criteria}
+    controller: gsiwerd\MyBundle\Controller\ItemsController::createAction
+    methods: [POST]
+
+update_item:
+    path: /items/{criteria}/{id}
+    controller: gsiwerd\MyBundle\Controller\ItemsController::updateAction
+    requirements:
+        id: '\d+'
+    methods: [PUT]
+
+delete_item:
+    path: /items/{criteria}/{id}
+    controller: gsiwerd\MyBundle\Controller\ItemsController::deleteAction
+    requirements:
+        id: '\d+'
+    methods: [DELETE]

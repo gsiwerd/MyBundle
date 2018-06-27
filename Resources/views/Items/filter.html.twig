@@ -1,0 +1,22 @@
+<div>
+  <label><input type="radio" name="view_criteria" value="all"
+    onclick="window.location.replace('{{ default_url }}/all');"
+    {% if criteria == 'all' %} checked {% endif %}>
+    Wszystkie
+  </label>
+  <label><input type="radio" name="view_criteria" value="available"
+    onclick="window.location.replace('{{ default_url }}/available');"
+    {% if criteria == 'available' %} checked {% endif %}>
+    Dostępne
+  </label>
+  <label><input type="radio" name="view_criteria" value="not_available"
+    onclick="window.location.replace('{{ default_url }}/not_available');"
+    {% if criteria == 'not_available' %} checked {% endif %}>
+    Niedostępne
+  </label>
+  <label><input type="radio" name="view_criteria" value="more_than_five"
+    onclick="window.location.replace('{{ default_url }}/more_than_five');"
+    {% if criteria == 'more_than_five' %} checked {% endif %}>
+    Dostępne w liczbie większej niż 5
+  </label>
+</div>

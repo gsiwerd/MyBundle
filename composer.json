@@ -10,6 +10,5 @@
         "psr-4" : {
             "gsiwerd\\MyBundle\\" : ""
         }
-    },
-    "target-dir" : "gsiwerd/MyBundle"
+    }
 }

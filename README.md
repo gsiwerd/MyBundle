@@ -18,7 +18,7 @@ of the Composer documentation.
 Step 2: Enable the Bundle
 -------------------------
 
-Then, enable the bundle by adding it to the list of registered bundles
+Then, enable the bundle and its requirements by adding it to the list of registered bundles
 in the `app/AppKernel.php` file of your project:
 
 ```php
@@ -33,6 +33,9 @@ class AppKernel extends Kernel
         $bundles = array(
             // ...
             new gsiwerd\MyBundle\MyBundle(),
+            new FOS\RestBundle\FOSRestBundle(),
+            new JMS\SerializerBundle\JMSSerializerBundle(),
+            new Nelmio\CorsBundle\NelmioCorsBundle(),
         );
 
         // ...

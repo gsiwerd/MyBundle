@@ -10,5 +10,10 @@
         "psr-4" : {
             "gsiwerd\\MyBundle\\" : ""
         }
+    },
+    "require": {
+      "friendsofsymfony/rest-bundle": "*",
+      "jms/serializer-bundle": "*",
+      "nelmio/cors-bundle": "*"
     }
 }
